@@ -119,7 +119,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        game {
+        layer_4 {
             bindings = <
 &kp F1          &kp N1  &kp N2  &kp N3        &kp N4  &kp Y                        &trans          &trans  &trans  &trans  &trans  &trans  &to 0
 &kp LEFT_SHIFT  &kp Q   &kp W   &kp E         &kp R   &kp T                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
