@@ -36,6 +36,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        layer24: layer24 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER24";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&to 4>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -67,10 +74,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U     &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &layer24  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -110,6 +117,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        game {
+            bindings = <
+&kp F1          &kp N1  &kp N2  &kp N3        &kp N4  &kp Y                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Q   &kp W   &kp E         &kp R   &kp T                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp A   &kp S   &kp Z         &kp F   &kp G      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp LEFT_ALT  &kp C   &kp SPACE                                    &trans  &trans  &trans
+            >;
         };
     };
 };
