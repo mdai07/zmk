@@ -209,7 +209,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - Q
   - W
@@ -242,7 +242,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - C
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
